@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(120deg, #150035, #42006C);
+  font-family: 'Orbitron', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  color: white;
+}
+
+button {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.2em;
+  box-shadow: 0 0 10px #FF00FF;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00FFF0;
+}
+
+#menu {
+  text-align: center;
+  padding-top: 25vh;
+}
+
+#lane-container {
+  display: flex;
+  height: 100vh;
+}
+
+.lane {
+  width: 25vw;
+  height: 100%;
+  border-right: 1px solid rgba(255,255,255,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.note {
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+  background: #FF00FF;
+  position: absolute;
+  top: -40px;
+  left: 10%;
+  border-radius: 10px;
+  animation: moveDown 2s linear forwards;
+}
+
+@keyframes moveDown {
+  to {
+    top: 100%;
+  }
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+}
+
+.hidden {
+  display: none;
+}
