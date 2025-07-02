@@ -1,18 +1,19 @@
 body {
-  background: linear-gradient(120deg, #150035, #42006C);
   font-family: 'Orbitron', sans-serif;
   overflow: hidden;
   margin: 0;
   color: white;
+  transition: background 1s ease;
 }
 
 button {
   background: rgba(255,255,255,0.1);
   border: none;
   padding: 15px 30px;
+  margin: 10px;
   border-radius: 30px;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
   box-shadow: 0 0 10px #FF00FF;
   transition: 0.3s;
 }
@@ -24,7 +25,13 @@ button:hover {
 
 #menu {
   text-align: center;
-  padding-top: 25vh;
+  padding-top: 20vh;
+}
+
+#track-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #lane-container {
@@ -68,3 +75,10 @@ button:hover {
 .hidden {
   display: none;
 }
+
+/* Fever dream backgrounds */
+body.dystopia { background: radial-gradient(#0e0e0e, #1a1a1a); }
+body.surreal { background: linear-gradient(45deg, #ffd6ff, #b8c0ff); }
+body.cirrus { background: linear-gradient(90deg, #00416a, #e4e5e6); }
+body.forest { background: linear-gradient(120deg, #004400, #001100); }
+body.fever { background: linear-gradient(180deg, #330000, #660000); }
